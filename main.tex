@@ -1,12 +1,14 @@
 \documentclass[12pt,reqno]{amsart}
 \usepackage{amsmath, amssymb}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subfig}
 
 \begin{document}
     \title{Subsets of $\mathbb{F}_p^d$ where no three elements sum to zero.}
-    \author{Ave Robertson}    
+    \author{}    
     \begin{abstract}
-        In this paper, we do some shit that I havent quite decided yet.
+        In this paper, we do some stuff that I havent quite decided yet.
     \end{abstract}
     \maketitle
 
@@ -21,4 +23,15 @@
     \end{itemize}
 
     Three cards are said to form a SET if, for each of the four features, the three cards have that feature as either all the same or all different.
-\end{document}
+
+    \begin{figure}[h]%
+        \centering
+        \subfloat[\centering Colour, Shading, Shape and Number are all different.]{{\includegraphics[width=0.4\linewidth]{GOODSET}} }
+        \qquad
+        \subfloat[\centering The second and third card have the same colour, so colour is \textit{not} all the same or all different for the three cards.]{{\includegraphics[width=0.4\linewidth]{BADSET}} }
+
+        \caption{An example of a valid SET and an invalid SET}\label{fig:GOODVSBAD}
+    \end{figure}
+
+    In the figure above, by these rules (A) is a valid SET, while (B) is not. Note that B \textit{would} be a valid set if the diamond was blue.
+\end{document}  
